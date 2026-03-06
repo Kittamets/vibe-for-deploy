@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install -D @types/passport-jwt @types/passport-google-oauth20 @types/cookie-parser)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(for f in course.model.ts semester.model.ts section.model.ts enrollment.model.ts grade.model.ts exam-schedule.model.ts)",
+      "Bash(do)",
+      "Bash(sed -i -E 's/^\\(  \\)\\([a-zA-Z_]+\\): /\\\\1declare \\\\2: /g' \"$f\")",
+      "Bash(done)",
+      "Bash(npm create vite@latest frontend -- --template react-ts)",
+      "Bash(npm install)",
+      "Bash(npm install react-router-dom axios)",
+      "Bash(npm install -D tailwindcss @tailwindcss/vite)",
+      "Bash(sc query MySQL80)",
+      "Bash(sc query MySQL)"
+    ]
+  }
+}
